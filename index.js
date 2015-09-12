@@ -12,7 +12,7 @@ var express = require('express'),
 
 app.use(bodyParser.json());
 app.use(cors());
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + ''));
 
 app.get('/api/goodreads/search', function(req, res){
   request({
